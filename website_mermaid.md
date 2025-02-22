@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[Homepage] --> B[Navigation]
     A --> C[Masthead]
