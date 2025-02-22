@@ -1,4 +1,5 @@
 ```mermaid
+```mermaid
 flowchart TD
     A[Homepage] --> B[Navigation]
     A --> C[Masthead]
@@ -10,63 +11,71 @@ flowchart TD
     A --> I[Contact]
     A --> J[Footer]
 
-flowchart TD
-    B[Navigation] --> B1[Logo]
-    B --> B2[Home]
-    B --> B3[About]
-    B --> B4[Sermons]
-    B --> B5[Ministries]
-    B --> B6[Donations]
-    B --> B7[Contact]
+    subgraph Navigation
+        B1[Logo]
+        B2[Home]
+        B3[About]
+        B4[Sermons]
+        B5[Ministries]
+        B6[Donations]
+        B7[Contact]
+    end
 
-flowchart TD
-    C[Masthead] --> C1[Video Background]
-    C --> C2[Main Heading]
-    C --> C3[Watch Sermon Button]
-    C --> C4[View More Sermons]
+    subgraph Masthead
+        C1[Video Background]
+        C2[Main Heading]
+        C3[Watch Sermon Button]
+        C4[View More Sermons]
+    end
+
+    subgraph About Us
+        D1[Our Story]
+        D2[Statement of Faith]
+        D3[Leadership]
+        D4[Photo Gallery]
+        D5[Location Map]
+    end
+
+    subgraph Ministries
+        E1[Children's Ministry]
+        E2[Youth Group]
+        E3[Women's/Men's Fellowship]
+        E4[Outreach & Missions]
+        E5[Kingdom Meetings]
+        E6[Ministry Modals]
+    end
+
+    subgraph Sermons
+        F1[Filter Categories]
+        F2[Sermon Cards]
+        F3[Video Embeds]
+        F4[PDF/Audio Downloads]
+        F5[Devotionals Blog]
+    end
+
+    subgraph Events
+        G1[Calendar]
+        G2[Event Modals]
+        G3[RSVP System]
+    end
+
+    subgraph Donations/Giving
+        H1[Online Giving]
+        H2[Recurring Donations]
+        H3[Financial Transparency]
+    end
+
+    subgraph Contact
+        I1[Contact Form]
+        I2[Phone Contact]
+    end
+
+    subgraph Footer
+        J1[Social Media]
+        J2[Copyright]
+    end
 
     click C3 "https://www.youtube.com/embed/QxQIr5SOKjE" _blank
+    click J1 "https://www.facebook.com/maurice.oloo" _blank
+```
 
-flowchart TD
-    D[About Us] --> D1[Our Story]
-    D --> D2[Statement of Faith]
-    D --> D3[Leadership]
-    D --> D4[Photo Gallery]
-    D --> D5[Location Map]
-
-flowchart TD
-    E[Ministries] --> E1[Children's Ministry]
-    E --> E2[Youth Group]
-    E --> E3[Women's/Men's Fellowship]
-    E --> E4[Outreach & Missions]
-    E --> E5[Kingdom Meetings]
-    E --> E6[Ministry Modals]
-
-
-flowchart TD
-    F[Sermons] --> F1[Filter Categories]
-    F --> F2[Sermon Cards]
-    F --> F3[Video Embeds]
-    F --> F4[PDF/Audio Downloads]
-    F --> F5[Devotionals Blog]
-
-
-flowchart TD
-    G[Events] --> G1[Calendar]
-    G --> G2[Event Modals]
-    G --> G3[RSVP System]
-
-flowchart TD
-    H[Donations/Giving] --> H1[Online Giving]
-    H --> H2[Recurring Donations]
-    H --> H3[Financial Transparency]
-
-flowchart TD
-    I[Contact] --> I1[Contact Form]
-    I --> I2[Phone Contact]
-
-flowchart TD
-    J[Footer] --> J1[Social Media]
-    J --> J2[Copyright]
-
-    click J1.Social "https://www.facebook.com/maurice.oloo" _blank
